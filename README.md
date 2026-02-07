@@ -81,6 +81,8 @@ cd Ocean Eyes
 #### 2.1 安装后端依赖
 
 ```bash
+conda create -n my_env python=3.10 -y
+conda activate my_env
 pip install -r requirements.txt
 ```
 
