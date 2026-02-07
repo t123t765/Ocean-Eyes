@@ -7,7 +7,7 @@ OceanEyes 是一个基于 YOLOv8 算法的智能水下生物识别系统，旨�
 ## 项目结构
 
 ```
-OceanEyes_v1.0/
+Ocean Eyes/
 ├── detect/                    # 检测模块
 │   ├── Fish-Detection-YOLOv8-main/  # YOLOv8 鱼类检测实现
 │   │   ├── backend/           # 后端服务
@@ -73,7 +73,7 @@ OceanEyes_v1.0/
 
 ```bash
 git clone <repository-url>
-cd OceanEyes_v1.0
+cd Ocean Eyes
 ```
 
 ### 2. 后端安装
