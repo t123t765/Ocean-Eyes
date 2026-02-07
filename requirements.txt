@@ -1,6 +1,10 @@
-# OceanEyes 项目依赖
+# Ocean Eyes 智能水下生物识别系统 - 后端依赖
+# 创建日期：2026-02-07
 
-# ====================
+# Python版本要求
+# 推荐使用Python 3.8-3.11
+# 不兼容Python 3.7及以下版本
+
 # 核心依赖
 fastapi==0.128.2
 uvicorn[standard]==0.40.0
@@ -49,6 +53,7 @@ ultralytics-thop==2.0.18
 websockets==16.0
 hhttptools==0.7.1
 watchfiles==1.1.1
+
 
 # ====================
 # 前端依赖（通过 npm 管理）
