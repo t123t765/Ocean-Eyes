@@ -49,7 +49,7 @@ py-cpuinfo==9.0.0
 # 模型评估
 ultralytics-thop==2.0.18
 
+
 # 网络工具
-websockets==16.0
-hhttptools==0.7.1
-watchfiles==1.1.1
+websockets==12.0
+watchfiles==0.22.0
