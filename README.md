@@ -1,4 +1,4 @@
-# OceanEyes - 智能水下生物识别系统
+# OceanEyes - AI水下助手
 
 ## 项目概述
 
