@@ -1,48 +1,52 @@
-# Core libraries and frameworks
-fastapi==0.128.2
-Flask==3.1.2
-gradio==6.5.1
-numpy==2.2.6
-pandas==2.3.1
-scikit-learn==1.7.2
-scipy==1.15.3
+# --- 1. PyTorch 官方源 (确保下载 GPU 版本) ---
+--extra-index-url https://download.pytorch.org/whl/cu118
 
-# AI and computer vision
+# --- 2. 核心底层依赖 (最优先安装) ---
+# 关键：必须锁定 Numpy 1.x 版本，否则 PyTorch 2.0 会报错
+numpy==1.26.4
+
+# PyTorch 核心 (会自动从上面的 index-url 下载)
 torch==2.0.0
-torchaudio==2.0.0
 torchvision==0.15.0
-ultralytics==8.3.167
-opencv-python==4.12.0.88
-grad-cam==1.5.5
 
-# Web and API related
-flask-cors==6.0.2
-httpx==0.28.1
-requests==2.32.4
-starlette==0.50.0
-websockets==16.0
+# --- 3. Web 框架 ---
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart
 
-# Data processing and visualization
-matplotlib==3.10.3
-Pillow==11.1.0
-moviepy==2.2.1
-ffmpy==1.0.0
+# --- 4. 图像处理 ---
+# 自动选择适配 Python 3.10 的最新 4.x 版本
+opencv-python>=4.9.0
+pillow>=10.0.0
+matplotlib>=3.8.0
 
-# Other tools
-pydantic==2.12.5
-python-dotenv==1.2.1
-tqdm==4.67.1
-anyio==4.12.1
-click==8.2.1
-colorama==0.4.6
-filelock==3.17.0
-fsspec==2026.2.0
-h11==0.16.0
-httptools==0.7.1
-pydantic_core==2.41.5
-typing_extensions==4.15.0
-psutil==7.0.0
-py-cpuinfo==9.0.0
-ultralytics-thop==2.0.18
-watchfiles==1.1.1
+# --- 5. AI 模型 (YOLO 等) ---
+# 自动适配 PyTorch 2.0
+ultralytics>=8.1.0
+ultralytics-thop
+
+# --- 6. 数据处理 ---
+pandas>=2.2.0
+scipy>=1.10.0
+
+# --- 7. 系统与辅助工具 ---
+psutil
+py-cpuinfo
+aiofiles
+annotated-types
+anyio
+click
+colorama
+filelock
+fsspec
+h11
+httpcore
+httpx
+pydantic>=2.5.0
+pydantic_core
+requests
+starlette
+typing_extensions
+websockets
+watchfiles
 
