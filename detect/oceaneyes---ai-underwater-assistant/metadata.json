@@ -1,0 +1,9 @@
+
+{
+  "name": "OceanEyes - AI Underwater Assistant",
+  "description": "A smart assistant for divers that uses YOLOv8 target detection and Gemini 3 AI to identify marine life and provide safety warnings via smart glasses.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

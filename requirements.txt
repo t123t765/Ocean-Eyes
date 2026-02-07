@@ -1,0 +1,53 @@
+# OceanEyes 项目依赖
+
+# ====================
+# 核心依赖
+# ====================
+
+# YOLOv8 目标检测框架
+ultralytics==8.1.0
+
+# FastAPI 后端框架
+fastapi==0.104.1
+uvicorn[standard]==0.23.2
+
+# OpenCV 图像处理库
+opencv-python==4.8.1.78
+
+# NumPy 科学计算库
+numpy==1.26.2
+
+# ====================
+# 辅助依赖
+# ====================
+
+# 图像处理和数据处理
+Pillow==10.1.0
+pandas==2.1.4
+scikit-image==0.22.0
+
+# 视频处理
+moviepy==1.0.3
+
+# 网络请求
+requests==2.31.0
+httpx==0.25.2
+
+# 环境管理
+python-dotenv==1.0.0
+
+# 工具库
+tqdm==4.66.1
+pyyaml==6.0.1
+
+# ====================
+# 前端依赖（通过 npm 管理）
+# ====================
+# 前端依赖在 oceaneyes---ai-underwater-assistant/package.json 中定义
+# 主要包括：
+# - React 18+
+# - TypeScript
+# - Tailwind CSS
+# - Vite
+# - Lucide React
+# - Capacitor
