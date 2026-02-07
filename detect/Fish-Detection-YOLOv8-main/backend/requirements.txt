@@ -1,55 +1,48 @@
-# Ocean Eyes 智能水下生物识别系统 - 后端依赖
-# 创建日期：2026-02-07
-
-# Python版本要求
-# 推荐使用Python 3.8-3.11
-# 不兼容Python 3.7及以下版本
-
-# 核心依赖
+# Core libraries and frameworks
 fastapi==0.128.2
-uvicorn[standard]==0.40.0
-opencv-python==4.12.0.88
-ultralytics==8.3.167
+Flask==3.1.2
+gradio==6.5.1
 numpy==2.2.6
-python-multipart==0.0.22
+pandas==2.3.1
+scikit-learn==1.7.2
+scipy==1.15.3
 
-# PyTorch 相关
+# AI and computer vision
 torch==2.0.0
+torchaudio==2.0.0
 torchvision==0.15.0
+ultralytics==8.3.167
+opencv-python==4.12.0.88
+grad-cam==1.5.5
 
-# 辅助依赖
-aiofiles==24.1.0
-annotated-types==0.7.0
+# Web and API related
+flask-cors==6.0.2
+httpx==0.28.1
+requests==2.32.4
+starlette==0.50.0
+websockets==16.0
+
+# Data processing and visualization
+matplotlib==3.10.3
+Pillow==11.1.0
+moviepy==2.2.1
+ffmpy==1.0.0
+
+# Other tools
+pydantic==2.12.5
+python-dotenv==1.2.1
+tqdm==4.67.1
 anyio==4.12.1
 click==8.2.1
 colorama==0.4.6
 filelock==3.17.0
 fsspec==2026.2.0
 h11==0.16.0
-httpcore==1.0.9
-httpx==0.28.1
-pydantic==2.12.5
+httptools==0.7.1
 pydantic_core==2.41.5
-requests==2.32.4
-starlette==0.50.0
 typing_extensions==4.15.0
-
-# 图像处理和可视化
-matplotlib==3.10.3
-pillow==11.1.0
-
-# 数据处理
-pandas==2.3.1
-scipy==1.15.3
-
-# 系统工具
 psutil==7.0.0
 py-cpuinfo==9.0.0
-
-# 模型评估
 ultralytics-thop==2.0.18
+watchfiles==1.1.1
 
-
-# 网络工具
-websockets==12.0
-watchfiles==0.22.0
