@@ -1,11 +1,12 @@
-# --- 1. PyTorch 官方源 (确保下载 GPU 版本) ---
---extra-index-url https://download.pytorch.org/whl/cu118
+# --- 1. PyTorch 官方 CPU 源 ---
+# 指定从 CPU 仓库下载，避免下载几百兆的 CUDA 包
+--extra-index-url https://download.pytorch.org/whl/cpu
 
 # --- 2. 核心底层依赖 (最优先安装) ---
 # 关键：必须锁定 Numpy 1.x 版本，否则 PyTorch 2.0 会报错
 numpy==1.26.4
 
-# PyTorch 核心 (会自动从上面的 index-url 下载)
+# PyTorch 核心 (会自动从上面的 CPU 源下载)
 torch==2.0.0
 torchvision==0.15.0
 
@@ -15,13 +16,11 @@ uvicorn[standard]>=0.27.0
 python-multipart
 
 # --- 4. 图像处理 ---
-# 自动选择适配 Python 3.10 的最新 4.x 版本
 opencv-python>=4.9.0
 pillow>=10.0.0
 matplotlib>=3.8.0
 
 # --- 5. AI 模型 (YOLO 等) ---
-# 自动适配 PyTorch 2.0
 ultralytics>=8.1.0
 ultralytics-thop
 
@@ -49,4 +48,3 @@ starlette
 typing_extensions
 websockets
 watchfiles
-
