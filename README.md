@@ -81,7 +81,6 @@ cd Ocean Eyes
 #### 2.1 安装后端依赖
 
 ```bash
-cd detect/Fish-Detection-YOLOv8-main/backend
 pip install -r requirements.txt
 ```
 
@@ -116,7 +115,7 @@ GEMINI_API_KEY=your_api_key_here
 
 ```bash
 cd detect/Fish-Detection-YOLOv8-main/backend
-python app.py
+start python app.py
 ```
 
 服务将在 `http://localhost:8000` 启动。
